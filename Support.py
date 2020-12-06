@@ -52,6 +52,7 @@ class AnalyzeSingleQuestion:
         - drop_answer is the list of rows to drop
         '''
         assert self.singlecol == True
+        self.perc = perc
         df_hist = self.DF.groupby([self.colname_tocompare, self.colname_reference]).count()[(np.nan,'response_id')].unstack()
         if drop_answer != None:
             df_hist = df_hist.drop(index=drop_answer)
@@ -73,12 +74,14 @@ class AnalyzeSingleQuestion:
             ax = df_plot.plot.bar(figsize=(15,5), title=title)
         else:
             ax = df_plot.loc[df_plot[limit['name']]>limit['value']].plot.bar(figsize=(15,5), title=title)
-                
-        ax.set_ylabel("%")
+        
+        if self.perc:
+            ax.set_ylabel("%")
 
     
     def calcHistMulti(self, perc=True):
         assert self.singlecol == False
+        self.perc = perc
         df_hist = self.DF.groupby(self.colname_reference).sum()[self.colname_tocompare]
         df_hist.columns.name = self.colname_tocompare
         

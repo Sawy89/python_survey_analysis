@@ -30,7 +30,7 @@ There is an additional `.py` file that runs the necessary code to standardize cl
 
 ## Results <a name="results"></a>
 
-The main findings of the code can be found at the post available [here](to arrive).
+The main findings of the code can be found at the post available [here](https://sawy89.medium.com/how-to-become-a-data-scientist-e3af6ded3920).
 
 ## Licensing, Authors, Acknowledgements <a name="licensing"></a>
 

@@ -15,16 +15,18 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ## Project Motivation<a name="motivation"></a>
 
-For this project, I was interestested in using Python developer survey data from 2019 to better understand:
+For this project, I was interestested in using Python developer survey data from 2019 to better understand the role of Data Scientist:
 
-1. ...
+1. Data Scientist need more experience than other roles?
+2. In which business this role is more appreciated?
+3. Which skills you will need the most?
 
 
 ## File Descriptions <a name="files"></a>
 
 There is 1 notebook here to show the analysis performed
 
-There is an additional `.py` file that runs the necessary code to obtain the final model used to predict salary.
+There is an additional `.py` file that runs the necessary code to standardize cleaning and plot/hist for analysis.
 
 ## Results <a name="results"></a>
 
